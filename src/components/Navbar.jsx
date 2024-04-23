@@ -8,7 +8,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY >= 100 ? setScroll(true) : setScroll(false);
+      window.scrollY >= 50 ? setScroll(true) : setScroll(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-[#4f66c8] text-white py-3 px-10 flex justify-between items-center ${
-        scroll ? "fixed w-full shadow-lg" : ""
+      className={`bg-[#4f66c8] text-white py-3 px-10 flex justify-between items-center  ${
+        scroll ? "fixed w-full shadow-2xl z-10" : ""
       }`}
     >
       <Link to="/">

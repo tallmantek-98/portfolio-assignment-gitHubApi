@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.border-gradient {
+    border-image: linear-gradient(to right, #EFA4FF45, #001BDC);
+    border-image-slice: 1;
+}

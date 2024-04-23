@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const RepoCard = ({ name, language, created_at, private: isPrivate, id }) => {
   return (
-    <div className="border border-[#4f66c8] w-[400px] h-[250px] mb-5 rounded-[8px] p-5 hover:scale-105 transition-all">
+    <div className="border border-gradient w-[400px] h-[250px] mb-5 rounded-[8px] p-5 hover:scale-105 transition-all bg-gradient-to-r from-[#d9d9d92f] to-[#ffffff10] backdrop-blur-lg">
       <h2 className="text-[30px] font-[600] capitalize">Name: {name}</h2>
       <div className="flex flex-col mt-4 gap-2">
         <p>Language: {!language ? "N/A" : language}</p>

@@ -12,7 +12,7 @@ const SingleRepoPage = () => {
 
   return (
     <div className="bg-gray-800 text-white h-screen flex justify-center items-center">
-      <div className="border border-[#4f66c8] p-4 rounded-[8px] w-[600px]">
+      <div className="border border-gradient p-4 rounded-[8px] w-[600px] bg-gradient-to-r from-[#d9d9d92f] to-[#ffffff10] backdrop-blur-lg">
         <h2 className="text-[40px] font-[500] capitalize">
           {selectedRepo?.name}
         </h2>
